@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>silu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/commom.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/echarts/echarts.js"></script>
+	<script src="js/ScrollPic.js"></script>
+</head>
+
+<body style="font-family: 'Microsoft YaHei'">
+	<!--logo-->
+	<header class="header">
+	    <!--logo-->
+	    <div class="container">
+	        <div class="pull-left" style="margin-top:15px;">
+	             <a href="#"><img src="./img/logo.png"  height="60"></a>
+	        </div>
+	        
+	        <div class="search-container col-md-4 pull-right"
+	            style="margin-top:20px; " >
+	            <form class="" action="">
+	                <div class="input-group">
+	                    <input type="text" name="searchKey" class="form-control">
+	                    <span class="input-group-btn" >
+	                        <button class="btn btn-primary" type="submit">搜索</button>
+	                    </span>
+	                </div>
+	                <p>
+                    热门搜索：<a href="#">能源</a>
+                             <a href="#">经济</a>
+                              <a href="#">合作</a>
+                              <a href="#">互联互通</a>
+                              <a href="#">亚投行</a>
+                </p>
+	            </form>
+	        </div>
+	    </div>
+	</header>
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default" role="navigation" style="margin-top:20px">
+	    <div class="container">
+	    	<ul class="nav navbar-nav" style="display: table; margin: 0px auto">	        
+            	<li style="display: table-cell; float: none;"><a href="#">要闻</a></li>
+            	<li style="display: table-cell; float: none;"><a href="#">领导讲话</a></li>
+            	<li style="display: table-cell; float: none;"><a href="#">国际动态</a></li>
+            	<li style="display: table-cell; float: none;"><a href="#">国内动态</a></li>
+            	<li style="display: table-cell; float: none;"><a href="#">区域监测</a></li>
+	        	<li class="dropdown" style="display: table-cell; float: none;">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">国际库 <span class="caret"></span></a>
+	        	 	<ul class="dropdown-menu">
+			            <li><a href="#">东南亚</a></li>
+			            <li><a href="#">东北亚</a></li>
+			            <li><a href="#">中亚与高加索</a></li>			
+			            <li><a href="#">南亚与印度洋</a></li>
+			            <li><a href="#">西亚北非</a></li>
+			            <li><a href="#">中东欧与俄罗斯</a></li>
+		          	</ul>
+	        	</li>
+	        	<li class="dropdown" style="display: table-cell; float: none;">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">国内库 <span class="caret"></span></a>
+	        	 	<ul class="dropdown-menu">
+			            <li><a href="#">年度报告</a></li>
+			            <li><a href="#">省情市情</a></li>
+			            <li><a href="#">战略规划</a></li>			
+			            <li><a href="#">政策法规</a></li>
+		          	</ul>
+	        	</li>
+	        	<li class="dropdown" style="display: table-cell; float: none;">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">国内库 <span class="caret"></span></a>
+	        	 	<ul class="dropdown-menu">
+			            <li><a href="#">年度数据</a></li>
+			            <li><a href="#">半年度数据</a></li>
+			            <li><a href="#">季度数据</a></li>			
+			            <li><a href="#">月度数据</a></li>
+		          	</ul>
+	        	</li>
+	        	<li class="dropdown" style="display: table-cell; float: none;">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文献库 <span class="caret"></span></a>
+	        	 	<ul class="dropdown-menu">
+			            <li><a href="#">媒体报道</a></li>
+			            <li><a href="#">研究著作</a></li>
+			            <li><a href="#">专家视点</a></li>			
+			            <li><a href="#">研究论文</a></li>
+			            <li><a href="#">专题报告</a></li>
+		          	</ul>
+	        	</li>
+	        </ul>
+	    </div>
+	</nav>
+
+
+	<!--三个库导航-->
+	<div class="container ">
+	    <div class="well" style="margin-top:-10px;background-color:#FFC"> 		      
+	    
+	    <table  border="1" cellpadding="0" cellspacing="0" bordercolor="#FF9966" frame=void class="table"> 
+			<tr> 
+				<td rowspan="2" style="vertical-align:middle"><span style="color:red; font-size:19px;"><strong>国际库</strong></span></td> 
+				<td><a href="">东南亚</a></td> 
+				<td><a href="">中亚与高加索</a></td>
+				<td><a href="">西亚与北非</a></td> 
+				<td rowspan="2" style="vertical-align:middle"><span style="color:red; font-size:19px;"><strong>统计库</strong></span></td>  
+				<td><a href="">年度数据</a></td>
+				<td><a href="">季度数据</a></td> 
+				<td rowspan="2" style="vertical-align:middle"><span style="color:red; font-size:19px;"><strong>文献库</strong></span></td>  
+				<td><a href="">媒体报道</a></td>
+				<td><a href="">研究著作</a></td> 
+				<td><a href="">专家视点</a></td> 
+			</tr> 
+			<tr> 
+				<td><a href="">东北亚</a></td> 
+				<td><a href="">南亚与印度洋</a></td> 
+				<td><a href="">中东欧与俄罗斯</a></td>
+				<td><a href="">半年度数据</a></td> 
+				<td><a href="">月度数据</a></td>
+				<td><a href="">研究论文</a></td>  
+				<td><a href="">专题报告</a></td> 
+			</tr> 
+		</table>
+		</div> 
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div id="map" style="width:100%;height:400px;border:2px solid #FF9933;"></div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+                	<div class="panel-heading"><span style="font-size:17px">每日要闻</span></div>
+                	<div class="list-group">
+                    	<a href="#" class="list-group-item">9月份住宅销量创年内新高</a>
+                        <a href="#" class="list-group-item">7-8月上海市固定资产投资增长7.5% </a>
+                        <a href="#" class="list-group-item">18月江西省经济运行情况分析</a>
+                        <a href="#" class="list-group-item">6-7月南京市固定资产投资增长0.2%</a>
+                        <a href="#" class="list-group-item">7月份浙江经济主要数据解读 </a>
+                        <a href="#" class="list-group-item">二季度浙江经济运行总体平稳</a>
+                        <a href="#" class="list-group-item">18月江西省经济运行情况分析</a>
+                        <a href="#" class="list-group-item">6-7月南京市固定资产投资增长0.2%</a>  
+                	</div>
+                </div>
+			</div>
+		</div>							
+	</div>
+
+	<div class="container">
+		<div class="row module-position">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>基本国情<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+				            <li><a href="#">非洲工商界期待“一带一路”</a></li>
+				            <li><a href="#">“一带一路”如何做到让钱包鼓鼓</a></li>
+				            <li><a href="#">中国经济半年报系列</a></li>
+				            <li><a href="#">目前德国东西部生活状况差异明显</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>政策法规<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">奥巴马还乡肯尼亚民众：别空手来</a></li>
+			                <li><a href="#">新西兰总理替中国投资者做主</a></li>
+			                <li><a href="#">李克强：全面实行大病医保</a></li>
+			                <li><a href="#">陕西考古专家张仲立平生只为高原醉</a></li>
+			                <li><a href="#">习近平抵达伦敦 开始对英国进行国事访问</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>战略规划<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">奥巴马还乡肯尼亚民众：别空手来</a></li>
+			                <li><a href="#">新西兰总理替中国投资者做主</a></li>
+			                <li><a href="#">李克强：全面实行大病医保</a></li>
+			                <li><a href="#">陕西考古专家张仲立平生只为高原醉</a></li>
+			                <li><a href="#">习近平抵达伦敦 开始对英国进行国事访问</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>重大项目<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">构建战后国际秩序的法律基础</a></li>
+			                <li><a href="#">抗战爆发后曹禺曾遭到日本特务追踪</a></li>
+			                <li><a href="#">奢侈品调整在华战略赢市场纷纷降价</a></li>
+			                <li><a href="#">陕煤化集团跻身世界500强</a></li>
+			                <li><a href="#">英外交部：加强伙伴关系</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>产业发展<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list">
+			                <li><a href="#">为中欧关系注入生命力</a></li>
+			                <li><a href="#">非洲工商界期待“一带一路”投资</a></li>
+			                <li><a href="#">专家揭开古格王朝遗址神秘面纱</a></li>
+			                <li><a href="#">中国办特展迎流失境外“国宝”回归</a></li>
+			                <li><a href="#">米兰世博会南京周上演云锦大秀</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>智库报告<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">人民币首跻全球前四大支付货币</a></li>
+                			<li><a href="#">中国发展的重要战略机遇期</a></li>
+                			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+                			<li><a href="#">第四届中国—亚欧法律论坛闭幕</a></li>
+                			<li><a href="#">三季度经济数据今出炉</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>投资环境<small class="pull-right"><a href="/news">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">人民币首跻全球前四大支付货币</a></li>
+                			<li><a href="#">中国发展的重要战略机遇期</a></li>
+                			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+                			<li><a href="#">第四届中国—亚欧法律论坛闭幕</a></li>
+                			<li><a href="#">三季度经济数据今出炉</a></li>
+            			</ul>
+        			</div>
+        			<div class="col-md-6" >
+            			<div class="module-title">
+                			<h4>投资风险<small class="pull-right"><a href="#">更多</a></small></h4>
+           				</div>   
+            			<ul class="article-list" >
+                			<li><a href="#">人民币首跻全球前四大支付货币</a></li>
+                			<li><a href="#">中国发展的重要战略机遇期</a></li>
+                			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+                			<li><a href="#">第四届中国—亚欧法律论坛闭幕</a></li>
+                			<li><a href="#">三季度经济数据今出炉</a></li>
+            			</ul>
+        			</div>
+				</div>
+			</div><!-- end of col-md-8 -->
+			<!-- 右侧 侧边栏 -->
+			<div class="col-md-4">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default">
+		                	<div class="panel-heading"><span style="font-size:17px">领导讲话</span><a href="#" class="pull-right" style="font-size:17px">更多</a></div>
+		            		<ul class="article-list" >
+		            			<li><a href="#">人民币首跻全球前四大支付货币</a></li>
+		            			<li><a href="#">中国发展的重要战略机遇期</a></li>
+		            			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+		            			<li><a href="#">第四届中国—亚欧法律论坛闭幕</a></li>
+		            			<li><a href="#">三季度经济数据今出炉</a></li>
+				                <li><a href="#">中国办特展迎流失境外“国宝”回归</a></li>
+				                <li><a href="#">米兰世博会南京周上演云锦大秀</a></li>
+		        			</ul>
+		                </div>
+            		</div>
+            		<div class="col-md-12">
+            			<div class="panel panel-default">
+		                	<div class="panel-heading"><span style="font-size:17px">特约专栏</span><a href="#" class="pull-right" style="font-size:17px">更多</a></div>
+		            		<ul class="article-list" >
+		            			<li><a href="#">人民币首跻全球前四大支付货币</a></li>
+		            			<li><a href="#">中国发展的重要战略机遇期</a></li>
+		            			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+		            			<li><a href="#">第四届中国—亚欧法律论坛闭幕</a></li>
+		            			<li><a href="#">三季度经济数据今出炉</a></li>
+				                <li><a href="#">中国办特展迎流失境外“国宝”回归</a></li>
+				                <li><a href="#">米兰世博会南京周上演云锦大秀</a></li>
+		        			</ul>
+		                </div>
+            		</div>
+            		<div class="col-md-12">
+            			<div class="panel panel-default">
+		                	<div class="panel-heading"><span style="font-size:17px">宗教文化</span><a href="#" class="pull-right" style="font-size:17px">更多</a></div>
+		            		<ul class="article-list" >
+		            			<li><a href="#">人民币首跻全球前四大支付货币</a></li>
+		            			<li><a href="#">中国发展的重要战略机遇期</a></li>
+		            			<li><a href="#">陕煤化集团跻身世界500强</a></li>
+		            			<li><a href="#">第四届中国—亚欧法律论坛闭幕</a></li>
+		            			<li><a href="#">三季度经济数据今出炉</a></li>
+				                <li><a href="#">中国办特展迎流失境外“国宝”回归</a></li>
+				                <li><a href="#">米兰世博会南京周上演云锦大秀</a></li>
+		        			</ul>
+		                </div>
+            		</div>
+            	</div>
+			</div>
+		</div>
+	</div><!-- end of container -->
+
+	<div class="container" >
+		<!--滚动图片 start-->
+		<div class="rollphotos">
+			<div class="FixTitle">
+				<H3  style="margin-top:-1px">长江经济带沿线各省市</H3>
+			</div>
+			<div class="blk_29" >
+				<div class="LeftBotton" id="Leftarr"></div>
+				<div class="Cont" id="ISL_Cont_1" ><!-- 图片列表 begin -->
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/1.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/2.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/3.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/4.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/5.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/6.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/7.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/8.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/9.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/10.png" width=124 border="0"></a> 
+					</div>
+					<div class="box">
+						<a class="imgBorder" href="#" target="_blank"><img height="84" alt="" src="images/11.png" width=124 border="0"></a> 
+					</div>
+				</div><!-- 图片列表 end -->
+				<div class="RightBotton" id="Rightarr"></div>
+			</div>
+
+			<script language="javascript" type="text/javascript">
+					//<!--//--><![CDaTa[//><!--
+					var scrollPic_02 = new ScrollPic();
+					scrollPic_02.scrollContId   = "ISL_Cont_1"; //内容容器ID
+					scrollPic_02.arrLeftId      = "Leftarr";//左箭头ID
+					scrollPic_02.arrRightId     = "Rightarr"; //右箭头ID
+
+					scrollPic_02.frameWidth     = 908;//显示框宽度
+					scrollPic_02.pageWidth      = 152; //翻页宽度
+
+					scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+					scrollPic_02.space          = 10; //每次移动像素(单位px，越大越快)
+					scrollPic_02.autoPlay       = false; //自动播放
+					scrollPic_02.autoPlayTime   = 1; //自动播放间隔时间(秒)
+
+					scrollPic_02.initialize(); //初始化
+										
+					//--><!]]>
+			</script>
+		</div><!--滚动图片 end-->
+	</div>
+
+	<footer class="footer">
+ 		<div class="container">
+	        <div class="row" style="padding-top:20px">
+	            <div class="col-md-2">
+	                <h4>每日要闻</h4>
+	                <ul class=" list-unstyled">
+	                    <li><a href="#">政治</a></li>
+	                    <li><a href="#">经济</a></li>
+	                    <li><a href="#">社会</a></li>
+	                    <li><a href="#">文化</a></li>
+	                    <li><a href="#">国际关系</a></li>
+	                </ul>
+	                <h4>智库报告</h4>
+	                <ul class="list-unstyled">
+	                    <li><a href="#">综合</a></li>
+	                    <li><a href="#">政治</a></li>
+	                    <li><a href="#">经济</a></li>
+	                    <li><a href="#">文化</a></li>
+	                    <li><a href="#">社会</a></li>
+	                    <li><a href="#">科教</a></li>
+	                </ul>
+	                <h4>统计数据</h4>
+	                <ul class="list-unstyled">
+	                    <li><a href="#">指标一</a></li>
+	                    <li><a href="#">指标二</a></li>
+	                    <li><a href="#">指标三</a></li>
+	                    <li><a href="#">指标四</a></li>
+	                </ul>
+	            </div>
+	            <div class="col-md-2">
+	                <h4>区域监测</h4>
+	                <ul class=" list-unstyled">
+	                    <li><a href="#">一带一路</a></li>
+	                    <li><a href="#">长江经济带</a></li>
+	                    <li><a href="#">长江上游</a></li>
+	                    <li><a href="#">长江中游</a></li>
+	                    <li><a href="#">长江下游</a></li>
+	                </ul>
+	                <h4>热点话题</h4>
+	                <ul class="list-unstyled">
+	                    <li><a href="#">话题1</a></li>
+	                    <li><a href="#">话题2</a></li>
+	                    <li><a href="#">话题3</a></li>
+	                    <li><a href="#">话题4</a></li>
+	                </ul>
+	                <h4>领导讲话</h4>
+	                <ul class="list-unstyled">
+	                    <li><a href="#">话题1</a></li>
+	                    <li><a href="#">话题2</a></li>
+	                    <li><a href="#">话题3</a></li>
+	                    <li><a href="#">话题4</a></li>
+	                    <li><a href="#">话题5</a></li>
+	                </ul>
+	            </div>
+	            <div class="col-md-2">
+	                <h4>特色数据</h4>
+	                <ul class=" list-unstyled">
+	                    <li><a href="#">国情概况</a></li>
+	                    <li><a href="#">战略概况</a></li>
+	                    <li><a href="#">领导讲话</a></li>
+	                    <li><a href="#">建设项目</a></li>
+	                    <li><a href="#">商贸投资</a></li>
+	                    <li><a href="#">研究报告</a></li>
+	                    <li><a href="#">投资环境</a></li>
+	                    <li><a href="#">投资风险</a></li>
+	                    <li><a href="#">宗教文化</a></li>
+	                </ul>
+	            </div>
+	            <div class="col-md-5 col-md-offset-1">
+	                <div class="input-group">
+	                    <div class="input-group-btn">
+	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">按名称 <span class="caret"></span></button>
+	                        <ul class="dropdown-menu">
+	                          <li><a href="#">基本数据库</a></li>
+	                          <li><a href="#">统计数据库</a></li>
+	                          <li><a href="#">战略规划库</a></li>
+	                          <li><a href="#">年度报告库</a></li>
+	                        </ul>
+	                    </div><!-- /btn-group -->
+	                     
+	                    <input type="text" name="searchKey" class="form-control">
+	                    <span class="input-group-btn">
+	                        <button class="btn btn-primary" type="submit">搜索</button>
+	                    </span>    
+	                </div><!-- /input-group -->
+
+	                <div style="margin-top:30px">
+	                    <h4>浏览数据</h4>
+	                    <div class="row">
+	                        <div class="col-md-5">
+	                            <ul>
+	                                <li><a href="#">按国家</a></li>
+	                                <li style="margin-top:30px"><a href="#">按专题</a></li>
+	                            </ul>
+	                        </div>
+	                        <div class="col-md-5">
+	                            <ul>
+	                                <li><a href="#">按指标</li>
+	                                <li style="margin-top:30px"><a href="#">保留项</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <!-- <div class="row">
+	                        <div class="col-md-6">
+	                            <h4>精品</h4>
+	                            <ul>
+	                                <li>精品文章一</li>
+	                                <li>精品文章二</li>
+	                            </ul>
+	                        </div>
+	                        <div class="col-md-6">
+	                            <h4>最近更新</h4> 
+	                                <li>最新文章一</li>
+	                                <li>最新文章二</li>
+	                        </div>
+	                    </div> -->
+	                </div>
+	            </div><!-- end of col-md-5 -->
+	        </div>
+        <div class="row footer-bottom">
+            <ul class="list-inline text-center">
+                <li><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备11111111号</a></li>
+                <li>Copyright &copy; 2015. all Rights Reserved</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+	<script src="js/gdp-map.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  background: url('../img/img_0427.jpg') fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+/*http://i.imgur.com/Au8To6H.jpg*/
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+.transbox{
+	height: 450px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.row1 {
+	color: #001358;
+	font-size: 27px;
+	font-weight: bold;
+	margin: auto;
+	padding-left: 70px;
+	padding-top: 30px;
+}
+
+.row2-3{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 35px;
+	margin: auto;
+	padding-left: 110px;	
+}
+
+.row4{
+	color:#001358;
+	font-size: 27px;
+	font-weight: bold;
+	margin:auto;
+	padding-left: 70px;
+	padding-top: 10px;
+}
+
+.row5{
+	color:#000;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 35px;
+	margin: auto;
+	padding-left: 110px;	
+}
+.row5 a{
+	background: #868dad;
+	font-size: 12px;
+	color:#000;
+
+}
+
+.row6 {
+	font-size: 16px;
+	margin: auto;
+	font-weight: bold;
+	padding-left: 80px;
+	text-indent: 50px;
+	line-height: 1.8em;
+}
+
+.transbox-footer{
+	height:100px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color:#fff;
+}
+.transbox-footer a{
+	color:#fff;
+}
+.transbox-footer .row{
+	padding-left:20px;
+	padding-top:20px;
+}
+.container{
+	width: 1170px !important;
+}
+.carousel-inner{width: 100%;} 
+.carousel-inner img{width: 100%;} 
+.carousel-img{display: block;margin-right: auto;margin-left: auto;max-width:1600px; } 
